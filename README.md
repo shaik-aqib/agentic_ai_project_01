@@ -26,4 +26,22 @@ This system coordinates three AI agents — **Researcher**, **Writer**, and **Cr
 ---
 
 ## 🏗️ Project Structure
-
+multi_agent_system/
+│
+├── main.py # CLI entry point
+├── app.py # Gradio web interface
+│
+├── agents/ # Individual agents
+│ ├── research_agent.py
+│ ├── writer_agent.py
+│ └── critic_agent.py
+│
+├── orchestrator/
+│ └── orchestrator.py # Pipeline orchestrator
+│
+├── utils/
+│ └── logger.py # Logging utility
+│
+├── outputs/ # Saved JSON/text results
+├── requirements.txt
+└── README.md
